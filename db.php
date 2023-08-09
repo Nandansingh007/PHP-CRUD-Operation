@@ -11,9 +11,9 @@ try {
 
     // Check if the connection was successful
     if ($conn) {
-        echo "Connected to the database successfully!";
+        //echo "Connected to the database successfully!";
     }
 } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    //echo "Connection failed: " . $e->getMessage();
 }
 ?>

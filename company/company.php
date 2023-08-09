@@ -1,5 +1,5 @@
 <?php
-include ("db.php"); // Include the database connection
+include ("../db.php"); // Include the database connection
 
 // Create a new company
 if (isset($_POST['create'])) {
