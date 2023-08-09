@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company CRUD</title>
+</head>
+<body>
+    <h2>Create Company</h2>
+    <form action="company.php" method="post">
+        <input type="text" name="companyName" placeholder="Company Name" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <button type="submit" name="create">Create</button>
+    </form>
+
+    
+    <h2>Update Company</h2>
+    <form action="company.php" method="post">
+        <input type="text" name="companyId" placeholder="Company ID" required>
+        <input type="text" name="newCompanyName" placeholder="New Company Name" required>
+        <input type="text" name="newAddress" placeholder="New Address" required>
+        <button type="submit" name="update">Update</button>
+    </form>
+
+    <h2>Delete Company</h2>
+    <form action="company.php" method="get">
+        <input type="text" name="deleteCompanyId" placeholder="Company ID to Delete" required>
+        <button type="submit" name="delete">Delete</button>
+    </form>
+
+    <h2>Search Companies by Name</h2>
+    <form action="company.php" method="get">
+    <input type="text" name="searchName" placeholder="Company Name to Search" required>
+    <button type="submit" name="search">Search</button>
+</form> 
+</body>
+</html>
