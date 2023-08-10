@@ -2,24 +2,26 @@
 <html>
 <head>
     <title>Employee CRUD</title>
+    <script src="../validation.js"></script>
 </head>
 <body>
     <h2>Create Employee</h2>
-    <form action="employee.php" method="post">
+    <form action="employee.php" method="post" onsubmit="return validateCreateEmployeeForm();">
         <input type="text" name="employeeName" placeholder="Employee Name" required>
         <input type="text" name="salary" placeholder="Salary" required>
         <input type="date" name="dob" required>
-        <input type="text" name="companyName" placeholder="Company Name" required>
+        <input type="text" name="companyID" placeholder="Company ID" required>
         <button type="submit" name="create">Create</button>
+        <span id="salaryError" style="color: red;"></span>
     </form>
 
     <h2>Update Employee</h2>
-    <form action="employee.php" method="post">
+    <form action="employee.php" method="post" >
         <input type="text" name="employeeId" placeholder="Employee ID" required>
         <input type="text" name="newEmployeeName" placeholder="New Employee Name" required>
         <input type="text" name="newSalary" placeholder="New Salary" required>
         <input type="date" name="newDOB" required>
-        <input type="text" name="newCompanyName" placeholder="New Company Name" required>
+        <input type="text" name="newCompanyID" placeholder="New Company ID" required>
         <button type="submit" name="update">Update</button>
     </form>
 
